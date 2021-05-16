@@ -46,7 +46,6 @@ a {
 .chat-main {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  height: 400px;
 }
 
 .chat-sidebar {
@@ -112,6 +111,20 @@ a {
   }
 
   .chat-sidebar {
+    display: none;
+  }
+}
+@media (max-width: 552px) {
+  .chat-form-container {
+    padding: 10px;
+  }
+  .btn {
+    padding: 2px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 375px) {
+  form button.sendloc {
     display: none;
   }
 }
